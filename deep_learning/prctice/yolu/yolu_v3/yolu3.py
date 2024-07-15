@@ -139,6 +139,7 @@ class YOLU3(nn.Module):
         return result_13, result_26, result_52
 
 if __name__ == '__main__':
+    """just for test"""
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     module_yolu3 = YOLU3().to(device)
     data_item = torch.rand(1, 3, 416, 416).to(device)
