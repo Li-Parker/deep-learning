@@ -1,16 +1,8 @@
-# This is a sample Python script.
+import argparse
+parser = argparse.ArgumentParser(description="测试")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+parser.add_argument("--in_channels", type=int, default=3, help="输入通道数")
+parser.add_argument("--expect_result", type=float, default=3.0, help="期望结果")
+args = parser.parse_args()
+print(args.in_channels)
+print(args.expect_result)
