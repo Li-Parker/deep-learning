@@ -11,6 +11,7 @@
     <option name="namespacePackageFolders">
       <list>
         <option value="$MODULE_DIR$/deep_learning/prctice/cnn" />
+        <option value="$MODULE_DIR$/deep_learning/carla/transfuser_cvpr2021/leaderboard/team_code" />
       </list>
     </option>
   </component>
